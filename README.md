@@ -1,5 +1,16 @@
 # Order automation for PrestaShop online store software
 
-The program involves automation of the ordering process in PrestShop online store software. The program was written for a thesis to fill a test store installed on localhost. 
+Automation of the ordering process in PrestShop online store software. 
+Based on Selenium platform for automated testing of web applications in Python.
 
-This was a necessary step because there is no sample database of products and transactions in the community that can be imported into a PrestaShop store and would allow in-depth sales and logistics analysis. A mechanism based on Selenium's automated web application testing platform was implemented in a Python development environment. Orders were generated so that the average basket size was 1.5. The popularity of the products was determined based on a normal distribution. The automation adds products to the shopping cart according to the specified parameters, then completes the address data and generates the order. It was necessary to map the real order path, as the API query would have been too complicated and required too many parameters to be declared manually, which in the case of the real order path are generated automatically. Implemented error handling, allowed to generate 13 thousand orders.
+- There is no sample product and transaction database in the community that can be imported into a PrestaShop store, which would allow in-depth analysis of sales and logistics.
+- The API query is very complicated and requires manual declaration of many parameters, which in the case of the actual order path are generated automatically. 
+
+The automation takes into account the assumptions:
+1. generates orders so that the average basket size is 1.5.
+2. the popularity of products was determined by a normal distribution.
+3. Adds products to the shopping cart according to the specified parameters,
+4. Completes address and personal information and then generates an order. 
+5. Requires to disable friendly URLs in the store settings.
+The program was written for a master's thesis to fill a test store installed on localhost.  The master's thesis was entitled "Analytical system for online stores in the area of logistics management".
+Implemented error handling, allowed to generate 13 thousand orders.
