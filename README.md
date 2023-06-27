@@ -1,2 +1,5 @@
-# ordersAutomation
-PrestaShop_orders_automation
+# Order automation for PrestaShop online store software
+
+The program involves automation of the ordering process in PrestShop online store software. The program was written for a thesis to fill a test store installed on localhost. 
+
+This was a necessary step because there is no sample database of products and transactions in the community that can be imported into a PrestaShop store and would allow in-depth sales and logistics analysis. A mechanism based on Selenium's automated web application testing platform was implemented in a Python development environment. Orders were generated so that the average basket size was 1.5. The popularity of the products was determined based on a normal distribution. The automation adds products to the shopping cart according to the specified parameters, then completes the address data and generates the order. It was necessary to map the real order path, as the API query would have been too complicated and required too many parameters to be declared manually, which in the case of the real order path are generated automatically. Implemented error handling, allowed to generate 13 thousand orders.
